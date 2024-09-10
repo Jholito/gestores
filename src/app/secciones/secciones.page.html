@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Secciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-buttons>
+        <ion-button (click)="goBack()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title size="large" class="txtcenter">Tus Secciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Sección</th>
+          <th>Sala</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>S1</td>
+          <td>A101</td>
+          <td>
+            <ion-button shape="round" routerLink="/detalle-seccion">Detalle</ion-button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</ion-content>

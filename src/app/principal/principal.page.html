@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Check In</ion-title>
+  </ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button (click)="openMenu()">
+      <ion-icon name="menu">a</ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="txtcenter">Check In</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <img alt="Silhouette of mountains" src="../../assets/principal.PNG" /> 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">¡Ver Secciones!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      Visualiza información sobre tus secciones asociadas.
+      <div class="button-container">        
+        <ion-button shape="round" routerLink="/secciones">Ver</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>    
+</ion-content>
